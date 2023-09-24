@@ -1,0 +1,20 @@
+// LOCALHOST
+###
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/650f9ec1d773056d85b2a3ef
+###
+GET http://localhost:8080/contacts/650f9edbd773056d85b2a3f0
+###
+GET http://localhost:8080/contacts/650f9efbd773056d85b2a3f1
+
+// PRODUCTION Deploy
+###
+GET https://cse-341-web-services-d47l.onrender.com/contacts
+###
+GET https://cse-341-web-services-d47l.onrender.com/contacts/650f9efbd773056d85b2a3f1
+###
+GET https://cse-341-web-services-d47l.onrender.com/contacts/650f9edbd773056d85b2a3f0
+###
+GET https://cse-341-web-services-d47l.onrender.com/contacts/650f9efbd773056d85b2a3f1
+###
