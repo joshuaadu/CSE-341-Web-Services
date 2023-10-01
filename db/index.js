@@ -1,11 +1,11 @@
-const { DATABASE_URI } = require("../utils/config");
-const MongoClient = require("mongodb").MongoClient;
+const { DATABASE_URI } = require('../utils/config');
+const MongoClient = require('mongodb').MongoClient;
 
 let _db;
 
 const initDb = (callback) => {
   if (_db) {
-    console.log("Db is already initialized!");
+    console.log('Db is already initialized!');
     return callback(null, _db);
   }
   MongoClient.connect(DATABASE_URI)
@@ -20,12 +20,12 @@ const initDb = (callback) => {
 
 const getDb = () => {
   if (!_db) {
-    throw Error("Db not initialized");
+    throw Error('Db not initialized');
   }
   return _db;
 };
 
 module.exports = {
   initDb,
-  getDb,
+  getDb
 };
