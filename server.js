@@ -1,8 +1,8 @@
-const mongodb = require("./db");
-const { PORT } = require("./utils/config");
-const app = require("./app");
+const mongodb = require('./db');
+const { PORT } = require('./utils/config');
+const app = require('./app');
 
-mongodb.initDb((err, mongodb) => {
+mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {

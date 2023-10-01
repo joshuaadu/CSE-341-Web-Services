@@ -7,6 +7,42 @@ GET http://localhost:8080/contacts/650f9ec1d773056d85b2a3ef
 GET http://localhost:8080/contacts/650f9edbd773056d85b2a3f0
 ###
 GET http://localhost:8080/contacts/650f9efbd773056d85b2a3f1
+###
+// LOCALHOST
+### Get all contacts
+GET http://localhost:8080/contacts
+
+
+### Get contact by id
+GET http://localhost:8080/contacts/650f9efbd773056d85b2a3f1
+
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ashley",
+    "lastName":"Weaver",
+    "email":"aWeaver@test.com",
+    "favoriteColor":"Brown",
+    "birthday":"06/19/2000"
+}
+
+
+### PUT contact
+PUT http://localhost:8080/contacts/6518f1e846efc5e2ca2e9951 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sarah",
+    "lastName":"Birch",
+    "email":"test@gmail.com",
+    "favoriteColor":"Green",
+    "birthday":"12/12/20"
+}
+### DELETE contact
+DELETE http://localhost:8080/contacts/6518f1e846efc5e2ca2e9951 HTTP/1.1
 
 // PRODUCTION Deploy
 ###
@@ -18,3 +54,28 @@ GET https://cse-341-web-services-d47l.onrender.com/contacts/650f9edbd773056d85b2
 ###
 GET https://cse-341-web-services-d47l.onrender.com/contacts/650f9efbd773056d85b2a3f1
 ###
+POST https://cse-341-web-services-d47l.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Chris",
+    "lastName":"Chat",
+    "email":"chrischat@test.com",
+    "favoriteColor":"Blue",
+    "birthday":"06/19/201"
+}
+
+
+### PUT contact
+PUT https://cse-341-web-services-d47l.onrender.com/contacts/6518f1e846efc5e2ca2e9951 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Grace",
+    "lastName":"Nissi",
+    "email":"gracenissi@gmail.com",
+    "favoriteColor":"Green",
+    "birthday":"12/12/20"
+}
+### DELETE contact
+DELETE https://cse-341-web-services-d47l.onrender.com/contacts/6518f1e846efc5e2ca2e9951 HTTP/1.1
