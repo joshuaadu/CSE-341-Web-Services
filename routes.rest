@@ -67,15 +67,15 @@ content-type: application/json
 
 
 ### PUT contact
-PUT https://cse-341-web-services-d47l.onrender.com/contacts/6518f1e846efc5e2ca2e9951 HTTP/1.1
+PUT https://cse-341-web-services-d47l.onrender.com/contacts/6518f42d473ae4db75612f5b HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Grace",
-    "lastName":"Nissi",
-    "email":"gracenissi@gmail.com",
-    "favoriteColor":"Green",
-    "birthday":"12/12/20"
+   "firstName":"Charles",
+    "lastName":"Chat",
+    "email":"chrischat@test.com",
+    "favoriteColor":"Blue",
+    "birthday":"06/19/201"
 }
 ### DELETE contact
-DELETE https://cse-341-web-services-d47l.onrender.com/contacts/6518f1e846efc5e2ca2e9951 HTTP/1.1
+DELETE https://cse-341-web-services-d47l.onrender.com/contacts/6518f42d473ae4db75612f5b HTTP/1.1

@@ -24,7 +24,7 @@ const create = async (req, res) => {
   }
   const result = await mongodb.getDb().db('cse341').collection('contacts').insertOne(req.body);
   console.log(result);
-  res.status(201).json({ message: 'Contact created!' });
+  res.status(201).json({ message: 'Contact created!', id: result.insertedId });
 };
 
 const update = async (req, res) => {
@@ -35,7 +35,8 @@ const update = async (req, res) => {
     .collection('contacts')
     .updateOne({ _id: userId }, { $set: req.body });
   console.log(result);
-  res.status(200).json({ message: 'Contact updated!' });
+  res.status(204);
+  // res.status(204).json({ message: 'Contact updated!' });
 };
 
 const deleteContact = async (req, res) => {
